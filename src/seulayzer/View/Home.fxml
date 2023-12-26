@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seulayzer.ViewControl.HomeControl">
+   <children>
+      <Pane layoutX="142.0" prefHeight="400.0" prefWidth="458.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="14.0" layoutY="14.0" prefHeight="111.0" prefWidth="122.0">
+               <children>
+                  <Button fx:id="btnWES" layoutX="-2.0" mnemonicParsing="false" onAction="#openWESRef" prefHeight="111.0" prefWidth="129.0" style="-fx-background-radius: 10;" text="Whole Exome &#10;Data Analysis" textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Button fx:id="btnWGS" layoutX="169.0" layoutY="14.0" mnemonicParsing="false" onAction="#openWGSRef" prefHeight="111.0" prefWidth="129.0" style="-fx-background-radius: 10;" text="Whole Genome&#10;Data Analysis" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAllele" layoutX="319.0" layoutY="14.0" mnemonicParsing="false" onAction="#openAllele" prefHeight="111.0" prefWidth="129.0" style="-fx-background-radius: 10;" text="Alllele &#10;Frequency &#10;Calculation" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnMeta" layoutX="11.0" layoutY="145.0" mnemonicParsing="false" onAction="#openMetagenomics" prefHeight="111.0" prefWidth="129.0" style="-fx-background-radius: 10;" text="Metagenomics">
+               <font>
+                  <Font name="Times New Roman Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnProt" layoutX="169.0" layoutY="145.0" mnemonicParsing="false" onAction="#openMetagenomics" prefHeight="111.0" prefWidth="129.0" style="-fx-background-radius: 10;" text="Protomics">
+               <font>
+                  <Font name="Times New Roman Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCNVs" layoutX="319.0" layoutY="145.0" mnemonicParsing="false" onAction="#openMetagenomics" prefHeight="111.0" prefWidth="129.0" style="-fx-background-radius: 10;" text="CNVs Moudel&#10;Construction" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAnno" layoutX="11.0" layoutY="275.0" mnemonicParsing="false" onAction="#openMetagenomics" prefHeight="111.0" prefWidth="129.0" style="-fx-background-radius: 10;" text="Varients&#10;Annotation " textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnReport" layoutX="169.0" layoutY="275.0" mnemonicParsing="false" onAction="#openMetagenomics" prefHeight="111.0" prefWidth="129.0" style="-fx-background-radius: 10;" text="Varients&#10;Reporting" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSetting" layoutX="319.0" layoutY="275.0" mnemonicParsing="false" onAction="#Setting" prefHeight="111.0" prefWidth="129.0" style="-fx-background-radius: 10;" text="Setting">
+               <font>
+                  <Font name="Times New Roman Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="-1.0" prefHeight="400.0" prefWidth="143.0">
+         <children>
+            <Pane layoutY="35.0" prefHeight="61.0" prefWidth="143.0" style="-fx-background-color: #6472F9; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="34.0" layoutY="19.0" prefHeight="17.0" prefWidth="87.0" style="-fx-background-radius: 10;" text="SEUlyzer" textAlignment="CENTER" textFill="#f5f4f4">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <VBox layoutY="100.0" prefHeight="301.0" prefWidth="143.0">
+               <children>
+                  <Button fx:id="btnUserManagment" mnemonicParsing="false" onAction="#openUserManagment" prefHeight="61.0" prefWidth="147.0" style="-fx-background-radius: 10;" text="User Managment">
+                     <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnabout" mnemonicParsing="false" onAction="#openabout" prefHeight="61.0" prefWidth="147.0" style="-fx-background-radius: 10;" text="About">
+                     <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnExit" mnemonicParsing="false" onAction="#openExit" prefHeight="61.0" prefWidth="147.0" style="-fx-background-radius: 10;" text="Exit">
+                     <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

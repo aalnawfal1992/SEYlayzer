@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seulayzer.ViewControl.Setting_CL">
+   <children>
+      <Pane layoutX="8.0" layoutY="8.0" prefHeight="346.0" prefWidth="583.0">
+         <children>
+            <Label layoutX="25.0" layoutY="26.0" text="Number of CPU:">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="67.0" text="Amount of RAM:">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCPU" layoutX="152.0" layoutY="23.0" />
+            <TextField fx:id="txtRAM" layoutX="152.0" layoutY="64.0" />
+            <Label layoutX="319.0" layoutY="27.0" text="Cores">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="319.0" layoutY="67.0" text="GB">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnCPURAMSUB" layoutX="153.0" layoutY="100.0" mnemonicParsing="false" onAction="#getResource" prefHeight="28.0" prefWidth="159.0" text="Save System Setting">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="labtest" layoutX="25.0" layoutY="148.0" prefHeight="17.0" prefWidth="134.0" />
+         </children>
+      </Pane>
+      <Button fx:id="btnHome" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#goHome" prefHeight="28.0" prefWidth="97.0" text="Home Page">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnExit" layoutX="495.0" layoutY="358.0" mnemonicParsing="false" onAction="#Exit" prefHeight="28.0" prefWidth="97.0" text="Exit">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

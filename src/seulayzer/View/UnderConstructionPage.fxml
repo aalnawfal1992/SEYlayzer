@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seulayzer.ViewControl.FurtherWork">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="325.0" layoutX="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Page_Under_Construction.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnHome" layoutX="150.0" layoutY="212.0" mnemonicParsing="false" onAction="#goHome" prefHeight="26.0" prefWidth="128.0" text="Home Page" />
+      <Button fx:id="btnExit" layoutX="354.0" layoutY="212.0" mnemonicParsing="false" onAction="#openExit" prefHeight="26.0" prefWidth="128.0" text="Exit Application" />
+   </children>
+</AnchorPane>
